@@ -187,7 +187,7 @@ a1.beschleunigen()
 print(f'Das Auto (a1) ist ein {a1._marke} und fährt {a1.get_speed()} km/h')
 # # Abruf der Attribut-Werte über Python-Style getter
 # print(f'Das Auto (a1) ist ein {a1.marke()} und fährt {a1.speed()} km/h')
-
+print(a1.__speed) # AttributeError: 'Auto' object has no attribute '__speed'
 # Abruf der Attribut-Werte über Python-Style getter
 print(f'Das Auto (a1) ist ein {a1.marke} und fährt {a1.speed} km/h')
 

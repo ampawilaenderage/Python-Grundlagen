@@ -10,5 +10,8 @@ if __name__ == '__main__':
     print("module_a: I am executed directly")
     main()
 
-con = details()
-details.printName(any) 
+con = Details()
+con.printName() 
+
+obj = Color()
+obj.printColor()

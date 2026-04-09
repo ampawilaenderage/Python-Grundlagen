@@ -72,3 +72,28 @@ orange.price()
 
 
 mango.price(22,44) # direct call not recommonded
+
+
+
+
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+class Duck:
+    def speak(self):
+        return "Quack!"
+
+# Same function works with any object that has a speak() method
+def make_sound(animal):
+    print(animal.speak())
+
+make_sound(Dog())   # Woof!
+make_sound(Cat())   # Meow!
+make_sound(Duck())  # Quack!
+
+print(Dog().speak()) # Woof!

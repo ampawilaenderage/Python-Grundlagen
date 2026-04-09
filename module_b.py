@@ -2,13 +2,12 @@
 
 print("module_b: __name__ =", __name__)
 print("module_b: program continues...")
-
-class details:
+x = 00
+class Details:
 
     name : str
     age : int
-    
-
+    print(x)
     def __init__(self):
         print('Constructor created')
     
@@ -27,9 +26,13 @@ class details:
         return print(name)
 
 
-details1 = details()
+details1 = Details()
 
 
 details1.x = 40
 details1.printName() # this method can identify self   # without staticmethod name = object (self)
-details.printNameWithoutObj() 
+Details.printNameWithoutObj() 
+
+class Color:
+    def printColor(self):
+        print('Green')
